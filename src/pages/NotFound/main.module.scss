@@ -1,0 +1,11 @@
+@import '/src/general.scss';
+
+.container {
+	height: 100vh;
+	h1 {
+		color: $black;
+		font-family: BoomshellFont;
+		font-size: $font120;
+		line-height: 158px;
+	}
+}

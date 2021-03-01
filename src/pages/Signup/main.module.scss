@@ -1,0 +1,146 @@
+@import '/src/general.scss';
+@import '~pretty-checkbox/src/pretty-checkbox.scss';
+
+body {
+	background: url('../../images/background.png') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.container {
+	height: 100vh;
+	h1 {
+		width: 300px;
+		margin-right: 296px;
+		line-height: 158px;
+		color: $black;
+		font-family: BoomshellFont;
+		font-size: $font120;
+	}
+}
+
+.registrationFormContainer {
+	width: 365px;
+	min-height: 567px;
+	background: #fff;
+	border: 1px solid #e5e5e5;
+	border-radius: 32px;
+	padding: 34px 32px 34px 32px;
+
+	h2 {
+		margin: 20px 0 52px 0px;
+		color: $black;
+		font-size: $font32;
+		font-weight: $font400;
+	}
+
+	.inputDetails {
+		height: 50px;
+		border-radius: 8px;
+		background: $light-gray;
+		border: 1px solid $line-gray;
+
+		&::placeholder {
+			color: $darker-gray;
+			font-weight: $font100;
+			font-size: $font18;
+		}
+
+		&:focus {
+			color: $black;
+			background: $light-gray;
+		}
+	}
+
+	div:nth-child(2) {
+		position: relative;
+		svg {
+			&:hover {
+				cursor: pointer;
+			}
+			position: absolute;
+			right: 15px;
+			top: 15px;
+		}
+	}
+	.termsAndConditions {
+		padding: 0;
+		position: relative;
+		margin-bottom: 50px;
+		input[type='checkbox'] {
+			opacity: 0;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 2;
+			cursor: pointer;
+		}
+		input[type='checkbox'] + .checkbox {
+			display: inline-block;
+			position: relative;
+			top: -1px;
+			margin: -1px 0px 0 0;
+			vertical-align: middle;
+			cursor: pointer;
+			width: 24px;
+			height: 24px;
+			background: $light-gray;
+			border: 1px solid $line-gray;
+			border-radius: 8px;
+			margin-right: 10px;
+			position: relative;
+		}
+
+		input[type='checkbox']:checked + .checkbox {
+			background: $black;
+		}
+
+		input[type='checkbox'] + span {
+			margin-right: 4px;
+		}
+
+		.labelText {
+			font-size: $font12;
+			font-weight: $font100;
+			.bold {
+				font-weight: bolder;
+			}
+		}
+	}
+	.createAccount {
+		width: 100%;
+		height: 50px;
+		margin-bottom: 28px;
+		background: $black;
+		color: $white;
+		box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
+		border-radius: 8px;
+		font-weight: $font500;
+		font-size: $font18;
+		&:hover {
+			background: $white;
+			color: $black;
+			border: 1px solid $line-gray;
+			transition: all 0.3s ease-in-out;
+		}
+	}
+	.logIn {
+		text-decoration: underline;
+		font-weight: $font100;
+		font-size: $font12;
+
+		a {
+			color: $black;
+		}
+	}
+}
+
+.errorMessage {
+	font-size: 12px;
+	letter-spacing: 0.05rem;
+	padding-left: 0.25rem;
+}

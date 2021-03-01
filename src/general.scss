@@ -1,0 +1,36 @@
+@import '/src/normalize';
+@font-face {
+	font-family: 'BoomshellFont';
+	src: local('/public/fonts/BoomshellFont.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Geomanist';
+	src: local('/public/fonts/Geomanist-Regular.otf') format('truetype');
+}
+
+body {
+	margin: 0;
+	font-family: Geomanist !important;
+}
+
+$black: #000;
+$white: #fff;
+$gray: #e5e5e5;
+$dark-gray: #ececec;
+$light-gray: #fafafa;
+$line-gray: #e6e6e6;
+$darker-gray: #bababa;
+
+$font12: 12px;
+$font14: 14px;
+$font20: 20px;
+$font18: 18px;
+$font24: 24px;
+$font30: 30px;
+$font32: 32px;
+$font120: 120px;
+
+$font100: 100;
+$font300: 300;
+$font400: 400;
+$font500: 500;
